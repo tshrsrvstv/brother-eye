@@ -32,7 +32,8 @@ For demo purposes we can feed video stream from laptop webcam, apache kafka and 
    pip install -r requirements.txt
    ```
 5. Downloads Pre trained YOLO weights from [here](https://pjreddie.com/media/files/yolov3.weights) and keep it inside `<CLONE_DIR>\brother-eye\yolo-person-detector\yolo` directory.
-6. Run `yolo-person-detector` using below commands.
+6. Edit `config.py` kept inside folder `<CLONE_DIR>\brother-eye\yolo-person-detector\src`, change value for _BASE_DIRECTORY_** to `<CLONE_DIR>\brother-eye\yolo-person-detector`.
+7. Run `yolo-person-detector` using below commands.
 
    ```bat
    cd <CLONE_DIR>\brother-eye\yolo-person-detector\src
@@ -41,7 +42,7 @@ For demo purposes we can feed video stream from laptop webcam, apache kafka and 
    ```bat
    python video_consumer.py
    ```
-7. Run `video-stream-producer` using below commands.
+8. Run `video-stream-producer` using below commands.
 
    ```bat
    cd <CLONE_DIR>\brother-eye\video-stream-producer\src
@@ -50,6 +51,7 @@ For demo purposes we can feed video stream from laptop webcam, apache kafka and 
    ```bat
    python video_reader.py
    ```
- 8. Go to [URL](http://localhost:9000/), Brother Eye Live Feed Dashboard should be loaded with webcam feed and Person Count chart.
+ 9. Go to [URL](http://localhost:9000/), Brother Eye Live Feed Dashboard should be loaded with webcam feed and Person Count chart.
  
 # Distributed System
+Brother Eye can also take a live feed from a IP Cam over a network. Please read this [link](http://help.angelcam.com/en/articles/372646-how-to-find-a-rtsp-address-for-an-onvif-compatible-camera-nvr-dvr) to obtain RTSP address for the IP Cam in the network.
