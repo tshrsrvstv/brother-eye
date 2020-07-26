@@ -31,4 +31,21 @@ In times of COVID 19 it is very important for everyone to maintain a proper soci
    pip install -r requirements.txt
    ```
 5. Downloads Pre trained YOLO weights from [here](https://pjreddie.com/media/files/yolov3.weights) and keep it inside `<CLONE_DIR>\brother-eye\yolo-person-detector\yolo` directory.
+6. Run `yolo-person-detector` using below commands.
 
+   ```bat
+   cd <CLONE_DIR>\brother-eye\yolo-person-detector\src
+   ```
+   
+   ```bat
+   python video_consumer.py
+   ```
+7. Run `video-stream-producer` using below commands.
+
+   ```bat
+   cd <CLONE_DIR>\brother-eye\video-stream-producer\src
+   ```
+   
+   ```bat
+   python video_reader.py
+   ```
