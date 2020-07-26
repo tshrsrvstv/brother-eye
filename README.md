@@ -63,4 +63,6 @@ For demo purposes we can feed video stream from laptop webcam, apache kafka and 
  
 # Distributed System
 Brother Eye can also take a live feed from a IP Cam over a network. Please read this [link](http://help.angelcam.com/en/articles/372646-how-to-find-a-rtsp-address-for-an-onvif-compatible-camera-nvr-dvr) to obtain RTSP address for the IP Cam in the network. Edit `config.py` kept inside folder `<CLONE_DIR>\brother-eye\video-stream-producer\src`, update **IP_CAM_URI** value with the RTSP address.
+
+
 **video-stream-producer**, **Kafka** and **yolo-person-detector** can also be run on distributed servers over network by changing `config.py` for both components.
