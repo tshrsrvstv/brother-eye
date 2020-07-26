@@ -16,6 +16,7 @@ In times of COVID 19 it is very important for everyone to maintain a proper soci
    ```bat
    bin\windows\zookeeper-server-start.bat config\zookeeper.properties
    ```
+   You might have to open up a new Terminal for running below command.
    
    ```bat
    bin\windows\kafka-server-start.bat config\server.properties
