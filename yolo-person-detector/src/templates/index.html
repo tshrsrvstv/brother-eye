@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="BrotherEyeApp">
+  <head>
+    <title>Brother Eye</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="{{url_for('static', filename='images/brother_eye_logo.png')}}" sizes="16x16">
+    <link href="{{url_for('static', filename='bootstrap/bootstrap.min.css')}}" rel="stylesheet" >
+    <link href="{{url_for('static', filename='custom/css/brother-eye.css')}}" rel="stylesheet" >
+  </head>
+  <body ng-controller="BrotherEyeController">
+    <div class="page-header heading">
+      <h1>
+        <img width='100px' src="{{url_for('static', filename='images/brother_eye_logo.png')}}">
+        <span>Brother Eye Live Feed</span>
+      </h1>
+    </div>
+    <div class="container-fluid well" style="margin-bottom:0">
+      <div class="row">
+        <!-- Here goes live feed-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <img src="{{ url_for('video_feed') }}">
+        </div>
+        <!-- Here is the plot-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <canvas id="chart" width="640" height="480"></canvas>
+        </div>
+      </div>
+      <div class="container description-text">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+            In times of COVID 19 it is very important for everyone to maintain a proper social distance and follow all
+            the safety norms and precautions, to help humanity fight the battle against the deadly virus AI/ML can be
+            leveraged to track any breach in social distance practices in various places of public gathering.
+            Brother Eye is a Real Time Person Detection System conceptualized for assisting offices, hotels, restaurants
+            and other places of public gatherings to detect number of individuals within a frame and point out the
+            breach scenarios. The implementation uses a pre trained YOLOv3 (You Only Look Once) model over COCO dataset
+            for person detection. Other technologies involved for developing the application are RSTP, Apache Kafka,
+            Python Flask, OpenCV, Numpy, Angular JS, ChartJs, Bootstrap, HTML, CSS, etc.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{url_for('static', filename='angular/angular.min.js')}}"></script>
+    <script src="{{url_for('static', filename='chartjs/Chart.min.js')}}"></script>
+    <script src="{{url_for('static', filename='custom/js/brother-eye.js')}}"></script>
+  </body>
+</html>
