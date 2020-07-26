@@ -2,9 +2,9 @@
 In times of COVID 19 it is very important for everyone to maintain a proper social distance and follow all the safety norms and precautions, to help humanity fight the battle against the deadly virus AI/ML can be leveraged to track any breach in social distance practices in various places of public gathering. Brother Eye is a Real Time Person Detection System conceptualized for assisting offices, hotels, restaurants and other places of public gatherings to detect number of individuals within a frame and point out the breach scenarios. The implementation uses a pre trained YOLOv3 (You Only Look Once) model over COCO dataset for person detection. Other technologies involved for developing the application are RTSP, Apache Kafka, Python Flask, OpenCV, Numpy, Angular JS, ChartJs, Bootstrap, HTML, CSS, etc.
 # brother-eye Components
 Brother Eye have primarily below components.
-1. `**video-stream-producer**`
+1. `video-stream-producer`
    Responsible for getting feed from the configured camera and send it over kafka streams.
-2. `**yolo-person-detector**`
+2. `yolo-person-detector`
    Responsible for reading video from the kafka stream, detecting persons in every 50th frame from the stream and running a flask server to host angular app an host relevant        APIs.
     
 # Quick Installation Instructions on Windows for Demo
