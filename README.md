@@ -5,7 +5,7 @@ Brother Eye have primarily below components.
 1. `video-stream-producer`
    Responsible for getting feed from the configured camera and send it over kafka streams.
 2. `yolo-person-detector`
-   Responsible for reading video from the kafka stream, detecting persons in every 50th frame from the stream and running a flask server to host angular app an host relevant        APIs.
+   Responsible for reading video from the kafka stream, detecting persons in every 50th frame from the stream and running a flask server to host angular JS app and host relevant APIs.
     
 # Quick Installation Instructions on Windows for Demo
 For demo purposes we can feed video stream from laptop webcam, apache kafka and yolo detector on same machine.
