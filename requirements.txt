@@ -3,4 +3,4 @@ libopencv==3.4.2
 opencv==3.4.2
 py-opencv==3.4.2
 flask==1.1.2
-numpy==1.18.5
+numpy==1.22.0
