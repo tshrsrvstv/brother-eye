@@ -2,5 +2,5 @@ kafka-python==1.4.7
 libopencv==3.4.2
 opencv==3.4.2
 py-opencv==3.4.2
-flask==1.1.2
+flask==2.3.2
 numpy==1.18.5
